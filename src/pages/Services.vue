@@ -26,19 +26,20 @@
           <!-- کارت 1 -->
           <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
             <div class="flex items-start gap-4">
-              <div class="shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white">
-                <!-- آیکن UI/UX -->
+              <div class="shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white">
+                <!-- آیکن توسعه وب -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M4 6h16M4 12h16M4 18h16"/>
+                  <path d="M3 4h18v16H3z"/>
+                  <path d="M8 4v16M16 4v16"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">طراحی UI/UX</h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">طراحی وب سایت های ریسپانسیو و جذاب</h3>
                 <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
-                  <li>طراحی رابط کاربری اختصاصی و خلاقانه</li>
-                  <li>طراحی تجربه کاربری با هدف افزایش نرخ تبدیل</li>
-                  <li>طراحی ریسپانسیو برای موبایل و تبلت</li>
-                  <li>طراحی صفحات فرود و کمپین‌های تبلیغاتی</li>
+                  <li>توسعه سایت با وردپرس، المنتور و ووکامرس</li>
+                  <li>توسعه قالب و افزونه اختصاصی وردپرس</li>
+                  <li>توسعه با فریم‌ورک‌های Vue و Tailwind CSS</li>
+                  <li>توسعه با زبان‌های PHP، JS</li>
                 </ul>
               </div>
             </div>
@@ -56,7 +57,7 @@
               <div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">سئو و بهینه‌سازی سرعت</h3>
                 <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
-                  <li>افزایش سرعت سایت با ابزارهای حرفه‌ای</li>
+                  <li>افزایش سرعت سایت با ابزارهای حرفه‌ای - Google Page Speed - GTMetrix</li>
                   <li>بهینه‌سازی تصاویر، فونت‌ها و فایل‌ها</li>
                   <li>بهینه‌سازی ساختار صفحات برای موتورهای جستجو</li>
                   <li>بررسی و رفع خطاهای سرچ کنسول گوگل</li>
@@ -68,20 +69,19 @@
           <!-- کارت 3 -->
           <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
             <div class="flex items-start gap-4">
-              <div class="shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white">
-                <!-- آیکن توسعه وب -->
+              <div class="shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-pink-500 flex items-center justify-center text-white">
+                <!-- آیکن UI/UX -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M3 4h18v16H3z"/>
-                  <path d="M8 4v16M16 4v16"/>
+                  <path d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
               </div>
               <div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">توسعه وب</h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">UI/UX</h3>
                 <ul class="text-gray-600 list-disc list-inside space-y-1 text-sm">
-                  <li>توسعه سایت با وردپرس و ووکامرس</li>
-                  <li>توسعه قالب و افزونه اختصاصی وردپرس</li>
-                  <li>توسعه با فریم‌ورک‌های Vue و Tailwind CSS</li>
-                  <li>توسعه با زبان‌های JS، PHP و SQL</li>
+                  <li>طراحی بر اساس رابط کاربری اختصاصی و خلاقانه</li>
+                  <li>طراحی بر اساس تجربه کاربری صحیح با هدف رضایت کاربران</li>
+                  <li>طراحی صفحات واکنش گرا برای موبایل و تبلت</li>
+                  <li>طراحی صفحات فرود و کمپین‌های تبلیغاتی</li>
                 </ul>
               </div>
             </div>

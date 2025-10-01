@@ -60,22 +60,34 @@
 <script setup>
 const items = [
   {
-    title: 'نمونه وب‌سایت شرکتی',
+    title: 'وب‌سایت شرکتی رفیق وب',
     domain: 'test-asgari.ir',
     url: 'https://test-asgari.ir/',
     preview: '/images/refighweb.webp'
   },
   {
-    title: 'نمونه وب‌سایت فروشگاهی',
+    title: 'وب‌سایت فروشگاهی علی بلکا',
     domain: 'alibelka.com',
     url: 'https://alibelka.com/',
     preview: '/images/alibelka.webp'
   },
   {
-    title: 'نمونه وب‌سایت خدماتی',
-    domain: 'service-example.com',
-    url: 'https://service-example.com',
-    preview: '/images/portfolio/service-example-long.jpg'
+    title: 'وب‌سایت خدماتی واردات-صادرات',
+    domain: 'bknco.ir',
+    url: 'https://bknco.ir/',
+    preview: '/images/bknco.webp'
+  },
+  {
+    title: 'وب‌سایت لوازم تحریر ریرا',
+    domain: 'riratahrir.ir',
+    url: 'https://riratahrir.ir/',
+    preview: '/images/riratahrir.webp'
+  },
+  {
+    title: 'لندینگ دندانپزشکی سرو',
+    domain: 'sarvbeauteeth.com/dental-composite-lnd-1',
+    url: 'https://sarvbeauteeth.com/dental-composite-lnd-1/',
+    preview: '/images/sarvbeauteeth.jpeg'
   }
 ]
 </script>

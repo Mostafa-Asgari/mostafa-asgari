@@ -23,7 +23,7 @@
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-[#8cffdf]">مهارت های من</h2>
       <p class="text-center text-gray-200 mb-12">مهارت ها و تکنولوژی های من را این قسمت میتوانید ببینید</p>
       <!-- فاصله ستون‌ها کم شده -->
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
         <div
           v-for="(s, i) in skills"
           :key="i"

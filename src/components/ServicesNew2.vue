@@ -52,7 +52,7 @@
         </p>
 </div>
 <!-- cards -->
-<div class="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+<div class="relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
 <!-- card -->
 <div :key="s.title" :style="{ transitionDelay: `${i * 150}ms` }" class="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-6 sm:p-7 lg:p-8 opacity-0 translate-y-6 scale-95 transition-all duration-700 ease-out" ref="animated" v-for="(s, i) in services">
 <!-- subtle radial glow -->
@@ -78,16 +78,16 @@
 </div>
 </div>
 <!-- title -->
-<h3 :style="{ color: s.accent }" class="relative z-10 text-xl sm:text-2xl font-bold mb-2">
+<h3 :style="{ color: s.accent }" class="relative z-10 text-xl lg:text-2xl font-bold mb-2">
             {{ s.title }}
           </h3>
 <!-- desc -->
-<p class="relative z-10 text-sm sm:text-base text-slate-300 leading-relaxed mb-4">
+<p class="relative z-10 text-sm lg:text-base text-slate-300 leading-relaxed mb-4">
             {{ s.desc }}
           </p>
 <!-- highlights -->
 <ul class="relative z-10 space-y-2 text-slate-300 text-sm sm:text-[0.95rem]">
-<li :key="idx" class="flex items-start gap-2" v-for="(pt, idx) in s.points">
+<li :key="idx" class="flex max-lg:text-sm items-start gap-2" v-for="(pt, idx) in s.points">
 <span :style="{ background: s.accent }" class="mt-1 inline-block w-2 h-2 rounded-full"></span>
 <span>{{ pt }}</span>
 </li>
@@ -126,7 +126,7 @@
     },
     {
       icon: 'uiux',
-      title: 'طراحی UI/UX',
+      title: 'UI/UX وب سایت ها',
       desc: 'طراحی رابط‌های کاربری زیبا با تجربه کاربری روان، هماهنگ با هویت برند و نیازهای واقعی کاربران.',
       points: ['تجربه کاربری جذاب و روان برای مخاطب', 'طراحی تصاویر تبلیغاتی زیبا برای معرفی ماندگار محصول', 'طراحی واکنش‌گرا برای نمایش بی‌نقص در موبایل، تبلت و دسکتاپ'],
       grad: ['#f59e0b', '#ef4444'],

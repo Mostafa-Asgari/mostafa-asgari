@@ -25,12 +25,12 @@
                class="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105" />
           
           <!-- گرادینت فسفری -->
-          <div class="absolute inset-x-0 bottom-0 z-10 h-3/4 bg-gradient-to-t from-[#050b2f] via-cyan-500/50 to-transparent"></div>
+          <div class="absolute inset-x-0 bottom-0 z-10 h-5/6 bg-gradient-to-t from-[#050b2f] via-cyan-600/50 to-transparent"></div>
           <!-- Glow -->
           <div class="absolute inset-x-0 bottom-0 z-0 h-2/3 bg-emerald-400/20 blur-2xl animate-glow"></div>
           
           <div class="absolute inset-0 z-20 flex flex-col justify-end p-8 text-left">
-            <div class="mb-3 flex items-center gap-2 text-sm font-medium text-purple-200">
+            <div class="mb-3 flex items-center gap-2 text-sm font-medium text-gray-200">
               <span class="rounded-full bg-orange-600 px-3 py-1 text-white">{{ post.category }}</span>
               <span>| {{ post.date }} |</span>
               <span>{{ post.author }}</span>

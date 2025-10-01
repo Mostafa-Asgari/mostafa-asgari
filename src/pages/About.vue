@@ -26,8 +26,9 @@
         </h2>
 
         <p class="fade-up leading-relaxed">
-          من یک توسعه‌دهنده فرانت‌اند هستم که به طراحی زیبا و کدنویسی تمیز علاقه دارم.
-          عاشق یادگیری تکنولوژی‌های جدیدم و همیشه دنبال چالش‌های تازه هستم.
+          من یک توسعه‌دهنده وردپرس و فرانت‌اند هستم که به طراحی های زیبا و کاربرپسند علاقه دارم.
+          عاشق یادگیری تکنولوژی‌های جدید هستم و همیشه دنبال چالش‌های تازه میباشم.
+          با بیش از ۵ سال سابقه در طراحی و توسعه وب با تمرکز بر وردپرس، کدنویسی، بهینه سازی سرعت و بهبود تجربه کاربری (UI-UX) و همچنین دارای تجربه در ویرایش و بهینه سازی تصاویر محصول برای وب.
         </p>
 
         <ul class="space-y-3">
@@ -56,26 +57,29 @@
     <div class="relative z-10 mt-16">
       <h3 class="text-3xl font-bold text-center text-gray-800 mb-6">سوابق کاری</h3>
       <div class="overflow-x-auto">
-        <table class="w-full border-collapse bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden">
+        <table class="min-w-full border-collapse bg-white/80 backdrop-blur-md rounded-xl shadow-lg overflow-hidden">
           <thead>
             <tr class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
-              <th class="py-3 px-4 text-right">سال</th>
-              <th class="py-3 px-4 text-right">سابقه</th>
-              <th class="py-3 px-4 text-right">نام شرکت</th>
-              <th class="py-3 px-4 text-right">سمت</th>
-              <th class="py-3 px-4 text-right">توضیحات</th>
+              <th class="py-3 px-4 text-right min-w-[160px]">نام شرکت</th>
+              <th class="py-3 px-4 text-center min-w-[100px]">سال</th>
+              <th class="py-3 px-4 text-center min-w-[140px]">سمت</th>
+              <th class="py-3 px-4 text-center min-w-[200px]">توضیحات</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(job, index) in workHistory" :key="index" class="border-b border-gray-200 hover:bg-cyan-50 transition">
-              <td class="py-3 px-4 text-[15px]">{{ job.year }}</td>
-              <td class="py-3 px-4 text-[15px]">{{ job.history }}</td>
-              <td class="py-3 px-4 text-[15px]">{{ job.company }}</td>
-              <td class="py-3 px-4 text-[15px]">{{ job.role }}</td>
-              <td class="py-3 px-4 text-[15px]">{{ job.description }}</td>
+            <tr
+              v-for="(job, index) in workHistory"
+              :key="index"
+              class="border-b border-gray-200 hover:bg-cyan-50 transition"
+            >
+              <td class="py-3 px-4 text-[14px] min-w-[160px]">{{ job.company }}</td>
+              <td class="py-3 px-4 text-[14px] min-w-[140px]">{{ job.year }}</td>
+              <td class="py-3 px-4 text-[14px] min-w-[180px]">{{ job.role }}</td>
+              <td class="py-3 px-4 text-[14px] min-w-[200px]">{{ job.description }}</td>
             </tr>
           </tbody>
         </table>
+
       </div>
     </div>
   </section>
@@ -93,11 +97,12 @@ const interests = [
 ];
 
 const workHistory = [
-  { year: "1402-1404", history: " 2 سال و نیم", role: "Wordpress Developer", company: "شرکت وب هما", description: "پیاده‌سازی وب‌سایت‌های شرکتی و فروشگاهی با وردپرس و المنتور و ... بهبود سرعت سایت و کار با پلاگین ها" },
-  { year: "1400-1402", history: "2 سال", role: "Front-end Developer", company: "ثمین گسترش", description: "طراحی وب‌سایت‌های مدرن با HTML, CSS, Tailwind, Vue.js" },
-  { year: "1399-1400", history: "1 سال", role: "Web Developer", company: "شرکت برنامه نویسی", description: "پیاده‌سازی وب سایت ها" },
-  { year: "1399-...", history: "شش ماه", role: "UX", company: "شرکت طراحی", description: "امور گرافیکی با فتوشاپ و ..." }
+  { year: "۱۴۰۲/۱ - ۱۴۰۴/۶", role: "Wordpress Developer", company: "شرکت وب هما", description: "پیاده‌سازی وب‌سایت‌های شرکتی و فروشگاهی با وردپرس، المنتور، ووکامرس، تم ها و HTML/CSS - بهبود سرعت بارگذاری سایت و سئو و کار با پلاگین ها و ... - بهینه سازی تجربه کاربری و رابط کاربری برای افزایش تعامل کاربران، رفع اشکالات و مشکلات فنی وب سایت ها - ساخت و ویرایش تصاویر تبلیغاتی از محصول " },
+  { year: "۱۴۰۰/۳ - ۱۴۰۲/۱", role: "Front-end Developer", company: "ثمین گسترش", description: "طراحی وب‌سایت‌ها با- Vue.js, JS, Wordpress, HTML, CSS," },
+  { year: "۱۳۹۹/۱۱ - ۱۴۰۰/۲", role: "Web Developer", company: "شرکت برنامه نویسی", description: "پیاده‌سازی پروژه های وب سایتی" },
+  { year: "۱۳۹۹ -...", role: "Web Developer", company: "شرکت طراحی", description: "" }
 ];
+
 </script>
 
 <script>

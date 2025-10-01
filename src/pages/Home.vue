@@ -18,18 +18,37 @@
         <p class="mt-4 text-white text-base sm:text-lg leading-relaxed">{{ profile.aboutShort }}</p>
 
         <div class="flex flex-row gap-3 mt-10 justify-center md:justify-start">
-          <router-link to="/portfolio" class="px-4 py-2 rounded-full text-white text-center hover:bg-[#1e0424] bg-gradient-to-r from-cyan-600 to-blue-700 transition-all duration-300 ease-out">نمونه کارها</router-link>
-          <router-link to="/contact" class="px-4 py-2 rounded-full border text-white text-center hover:bg-[#3c1569] hover:border-1 hover:border-[#3c1569] transition-all duration-300 ease-out">تماس</router-link>
+          <router-link
+            to="/portfolio"
+            class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#c442db] to-[#a91dc2] text-white px-5 py-3 shadow-lg hover:bg-[rgb(212,71,236)] active:scale-[0.99] transition"
+          >
+            نمونه کارها
+          </router-link>
+
+          <a
+            href="/Mostafa-Resume.pdf"
+            download="Mostafa-Resume.pdf"
+            class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-5 py-3 shadow-lg hover:from-cyan-500 hover:to-blue-500 active:scale-[0.99] transition"
+            aria-label="دانلود رزومه"
+          >
+            <!-- آیکن دانلود -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/>
+            </svg>
+            دانلود رزومه
+          </a>
         </div>
+
 
         <div class="flex flex-col items-center mt-10 md:mt-0 md:hidden">
             <div 
-              class="my-image w-64 h-64 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-dashed border-orange-500 animate-float"
+              class="my-image w-64 h-[28rem] sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-dashed border-orange-500 animate-float"
             >
               <img 
-                src="/images/my-image.webp" 
+                src="/images/mostafa-asgari.webp" 
                 alt="my-image"
-                class="w-full h-full object-cover bg-white"
+                class="w-full h-full object-cover" 
               />
             </div>
 
@@ -37,7 +56,7 @@
               توسعه‌دهنده وردپرس / فرانت اند / رابط کاربری
             </p>
         </div>
-
+ 
         <div class="mt-8" data-aos="fade-up">
           <!-- <h3 class="text-md text-white">فناوری‌هایی که بلدم :</h3> -->
           <div class="mt-3 space-y-3 progress">
@@ -48,10 +67,10 @@
 
       <div class="md:flex flex-col items-center mt-10 md:mt-0  hidden">
         <div 
-          class="my-image w-64 h-64 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg border-4 border-dashed border-orange-500 animate-float"
+          class="my-image w-64 h-[28rem] sm:w-56 sm:h-56 md:w-64 md:h-[28rem] rounded-full overflow-hidden shadow-lg border-4 border-dashed border-orange-500 animate-float"
         >
           <img 
-            src="/images/my-image.webp" 
+            src="/images/mostafa-asgari.webp" 
             alt="my-image"
             class="w-full h-full object-cover bg-white"
           />
@@ -104,7 +123,13 @@ export default {
 <style>
 .my-image{
   width: 20rem !important;
-  height: 20rem !important;
+  height: 28rem !important;
+}
+@media(max-width: 768px){
+  .my-image{
+    width: 17rem !important;
+    height: 25rem !important;
+  }
 }
 
 @keyframes float {

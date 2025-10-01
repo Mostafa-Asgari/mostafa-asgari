@@ -22,8 +22,8 @@
               @click="selectedCategory = cat"
               class="px-4 py-2 rounded-full border transition-all duration-300"
               :class="selectedCategory === cat
-                ? 'bg-orange-500 border-orange-500 text-white'
-                : 'border-gray-500 hover:bg-orange-500 hover:text-white hover:border-orange-500'"
+                ? 'bg-gradient-to-r from-cyan-600 to-blue-600 border-cyan-500 text-white max-sm:text-[13px]'
+                : 'border-gray-500 hover:bg-cyan-500 hover:text-white hover:border-cyan-500 max-sm:text-[13px]'"
             >
               {{ cat }}
             </button>

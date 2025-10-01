@@ -6,7 +6,7 @@
     <!-- عنوان -->
     <h2 
       ref="animatedItems" 
-      class="text-5xl font-extrabold text-teal-900 mb-[100px] opacity-1 translate-y-8 scale-95 transition-all duration-700 ease-out relative z-10"
+      class="text-3xl md:text-5xl font-extrabold text-teal-900 mb-[100px] opacity-1 translate-y-8 scale-95 transition-all duration-700 ease-out relative z-10"
     >
       فرایند کاری من
     </h2>
@@ -26,7 +26,7 @@
       >
         <!-- آیکن -->
         <div class="w-1/2 flex justify-center relative">
-          <div class="bg-white p-6 rounded-full shadow-md relative z-10">
+          <div class="bg-white p-4 md:p-6 rounded-full shadow-md relative z-10">
             <img :src="step.icon" class="w-[70px]" :alt="step.title">
           </div>
         </div>
@@ -40,8 +40,8 @@
 
         <!-- متن -->
         <div class="w-1/2 px-6" :class="step.reverse ? 'text-left ml-[250px]' : 'text-right mr-[250px]'">
-          <h2 class="mb-4 text-[1.7rem] font-bold text-yellow-400 drop-shadow-[0_0_7px_#134e4a]">{{ step.title }}</h2>
-          <p class="text-teal-900 text-md">{{ step.text }}</p>
+          <h3 class="mb-4 text-[0.8rem] sm:text-[1.7rem] font-bold text-yellow-400 drop-shadow-[0_0_7px_#134e4a]">{{ step.title }}</h3>
+          <p class="text-gray-200 text-md f !mportant">{{ step.text }}</p>
         </div>
       </div>
     </div>
@@ -76,3 +76,6 @@ onMounted(() => {
   animatedItems.value.forEach(el => el && observer.observe(el))
 })
 </script>
+<style>
+
+</style>

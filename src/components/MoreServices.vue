@@ -20,12 +20,12 @@
   
       <!-- عنوان -->
       <div class="relative text-center mb-14">
-        <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 leading-relaxed">
+        <h3 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 leading-relaxed">
             نگاهی به برخی از 
             <span class="text-cyan-600">پروژه‌ها</span> و 
             <span class="text-purple-600">وب‌سایت‌های</span> طراحی شده
         </h3>
-        <p class="mt-4 text-gray-600 text-base md:text-lg leading-relaxed px-28">
+        <p class="mt-4 text-gray-600 text-base lg:text-lg leading-relaxed px-10 sm:px-28">
             در این بخش می‌توانید مجموعه‌ای از پروژه‌های انجام شده را مشاهده کنید. 
             هر کدام با توجه به نیاز کارفرما و با بهره‌گیری از جدیدترین تکنولوژی‌ها طراحی و پیاده‌سازی شده‌اند تا تجربه‌ای کاربرپسند، مدرن و حرفه‌ای ارائه دهند.
         </p>
