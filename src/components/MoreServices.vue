@@ -25,7 +25,7 @@
             <span class="text-cyan-600">پروژه‌ها</span> و 
             <span class="text-purple-600">وب‌سایت‌های</span> طراحی شده
         </h3>
-        <p class="mt-4 text-gray-600 max-sm:justify text-base lg:text-lg leading-relaxed px-10 sm:px-28">
+        <p class="mt-4 text-gray-600 max-sm:text-justify text-base lg:text-lg leading-relaxed px-10 sm:px-28">
             در این بخش می‌توانید مجموعه‌ای از پروژه‌های انجام شده را مشاهده کنید. 
             هر کدام با توجه به نیاز کارفرما و با بهره‌گیری از جدیدترین تکنولوژی‌ها طراحی و پیاده‌سازی شده‌اند تا تجربه‌ای کاربرپسند، مدرن و حرفه‌ای ارائه دهند.
         </p>
