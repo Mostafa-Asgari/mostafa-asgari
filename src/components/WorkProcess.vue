@@ -26,7 +26,7 @@
       >
         <!-- آیکن -->
         <div class="w-1/2 flex justify-center relative">
-          <div class="bg-white p-4 md:p-6 rounded-full shadow-md relative z-10">
+          <div class="bg-white p-4 min-md:p-6 rounded-full shadow-md relative z-10">
             <img :src="step.icon" class="w-[70px]" :alt="step.title">
           </div>
         </div>

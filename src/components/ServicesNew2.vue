@@ -12,8 +12,8 @@
 <div :class="step.reverse ? 'flex-row-reverse text-left' : 'text-right'" :key="index" class="mb-16 last:mb-0 flex items-center w-full relative opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out" ref="animatedItems" v-for="(step, index) in steps">
 <!-- آیکن -->
 <div class="w-1/2 flex justify-center relative">
-<div class="bg-white p-6 rounded-full shadow-md relative z-10">
-<img :alt="step.title" :src="step.icon" loading="lazy" class="max-md:w-[40px]" decoding="async" width="70" height="70"/>
+<div class="bg-white rounded-full shadow-md relative z-10 w-[70px] p-4 process">
+<img :alt="step.title" :src="step.icon" loading="lazy" class="max-md:w-[60px] min-md-[70px]" decoding="async" width="70" height="70"/>
 </div>
 </div>
 <!-- md:mr-0 -mr-16 -->
@@ -69,12 +69,6 @@
 <svg class="w-8 h-8 text-white" v-if="s.icon==='uiux'" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h16v10H4z" fill="currentColor" opacity=".2"></path><path d="M20 3H4a2 2 0 0 0-2 2v14l4-4h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 8H6l-2 2V5h16Z" fill="currentColor"></path><circle cx="8" cy="8" fill="currentColor" r="1.25"></circle><circle cx="11" cy="8" fill="currentColor" r="1.25"></circle><circle cx="14" cy="8" fill="currentColor" r="1.25"></circle></svg>
 <svg class="w-8 h-8 text-white" v-else-if="s.icon==='dev'" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h16v14H4z" fill="currentColor" opacity=".2"></path><path d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 16H4V5h16ZM8.5 15.5L6 13l2.5-2.5l1.5 1.5L9 13l1 1Zm7 0l2.5-2.5L15.5 10l-1.5 1.5L16 13l-2 2Zm-6.2 2.2l2.4-11l1.96.43l-2.4 11Z" fill="currentColor"></path></svg>
 <svg class="w-8 h-8 text-white" v-else="" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 5h10v6H4z" fill="currentColor" opacity=".2"></path><path d="M20 13h-2V5a2 2 0 0 0-2-2H4C2.9 3 2 3.9 2 5v6c0 1.1.9 2 2 2h6v2H8v2h2v2h2v-2h2v-2h-2v-2h6c1.1 0 2-.9 2-2Zm-8 0H4V5h12v8Z" fill="currentColor"></path><path d="M6 7h8v2H6z" fill="currentColor" opacity=".6"></path></svg>
-<!-- آیکن دوم (فقط یکی باقی ماند) -->
-<!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-     class="w-8 h-8 text-white">
-  <path fill="currentColor" d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 16H4V5h16Z"/>
-  <path fill="currentColor" d="M8.5 15.5L6 13l2.5-2.5l1.5 1.5L9 13l1 1Zm7 0l2.5-2.5L15.5 10l-1.5 1.5L16 13l-2 2Zm-6.2 2.2l2.4-11l1.96.43l-2.4 11Z"/>
-</svg> -->
 
 </div>
 </div>
@@ -295,5 +289,14 @@ onMounted(() => {
     .aurora-3 { width: 50vw; height: 50vw; top: 42%; }
     .meteor-4 { display: none; }
     .meteor { opacity: .6; }
+  }
+  @media(max-width: 578px){
+    .process{
+      display: flex !important;
+      justify-content: center !important;
+      width: 70px !important;
+      height: 70px !important;
+      padding: 3px !important;
+    }
   }
   </style>
