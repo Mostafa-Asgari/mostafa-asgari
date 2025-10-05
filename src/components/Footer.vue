@@ -138,10 +138,10 @@
       </div>
 
       <!-- بخش پایینی -->
-      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-white/70 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p>© {{ new Date().getFullYear() }} - تمام حقوق محفوظ است. طراحی و توسعه: مصطفی عسگری</p>
+      <div class="mt-10 border-t border-white/10 pt-6 text-[12px] md:text-sm text-white/70 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p >© {{ new Date().getFullYear() }} - تمام حقوق محفوظ است. طراحی و توسعه: مصطفی عسگری</p>
         <div class="flex items-center gap-4">
-          <a href="#" class="hover:underline">تابستان ۱۴۰۴</a>
+          <a href="#" class="hover:underline text-[11px] md:text-sm">تابستان ۱۴۰۴</a>
         </div>
       </div>
     </div>

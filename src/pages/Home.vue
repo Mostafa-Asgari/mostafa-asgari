@@ -20,7 +20,7 @@
         <div class="flex flex-row gap-3 mt-10 justify-center md:justify-start">
           <router-link
             to="/portfolio"
-            class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#c442db] to-[#a91dc2] text-white px-5 py-3 shadow-lg hover:bg-[rgb(212,71,236)] active:scale-[0.99] transition"
+            class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#c442db] to-[#a91dc2] text-white px-5 py-3 shadow-lg hover:from-[#b142c5] hover:to-[#862497] active:scale-[0.99] transition"
           >
             نمونه کارها
           </router-link>

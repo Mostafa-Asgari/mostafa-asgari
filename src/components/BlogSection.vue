@@ -9,7 +9,7 @@
     <div class="relative z-10 mx-auto w-full max-w-7xl px-4 text-center">
       <!-- تیتر وسط چین با انیمیشن -->
       <div class="mb-[90px] flex justify-center">
-        <h3 class="text-6xl font-extrabold tracking-wider text-[#8cffdf]">بلاگ</h3>
+        <h3 class="text-5xl md:text-6xl font-extrabold tracking-wider text-[#8cffdf] border-b-2 border-purple-500 pb-2">بلاگ</h3>
       </div>
       
       <!-- کارت‌ها -->

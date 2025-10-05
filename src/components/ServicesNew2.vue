@@ -2,30 +2,31 @@
 <template>
 <section class="relative overflow-hidden py-16 sm:py-20 px-4 sm:px-6 lg:px-10 bg-gradient-to-b from-[#0b1220] to-[#0a0f1a] text-slate-100">
 
-<h2 class="text-5xl text-center font-extrabold text-gray-200 mb-[100px] opacity-1 translate-y-8 scale-95 transition-all duration-700 ease-out relative z-10" ref="animatedItems">
+<h2 class="text-3xl md:text-4xl lg:text-5xl text-center font-extrabold text-[#8cffdf] mb-[100px] opacity-1 translate-y-8 scale-95 transition-all duration-700 ease-out relative z-10" ref="animatedItems">
       فرایند کاری من
-    </h2>
+</h2>
 <div class="relative flex flex-col items-center w-full max-w-xl z-10 mx-auto">
 <!-- خط عمودی اصلی -->
-<div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-teal-900"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-teal-700"></div>
 <!-- مرحله‌ها -->
 <div :class="step.reverse ? 'flex-row-reverse text-left' : 'text-right'" :key="index" class="mb-16 last:mb-0 flex items-center w-full relative opacity-0 translate-y-8 scale-95 transition-all duration-700 ease-out" ref="animatedItems" v-for="(step, index) in steps">
 <!-- آیکن -->
 <div class="w-1/2 flex justify-center relative">
 <div class="bg-white p-6 rounded-full shadow-md relative z-10">
-<img :alt="step.title" :src="step.icon" loading="lazy" decoding="async" width="70" height="70"/>
+<img :alt="step.title" :src="step.icon" loading="lazy" class="max-md:w-[40px]" decoding="async" width="70" height="70"/>
 </div>
 </div>
+<!-- md:mr-0 -mr-16 -->
 <!-- اتصال خطی -->
 <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center z-10">
-<div class="w-[6rem] mr-[110px] h-1 bg-teal-900" v-if="!step.reverse"></div>
-<div class="w-4 h-4 bg-teal-900 rounded-full"></div>
-<div class="w-[6rem] ml-[110px] h-1 bg-teal-900" v-if="step.reverse"></div>
+<div class="w-[4rem] md:w-[6rem] mr-[80px] md:mr-[110px] h-1 bg-teal-700" v-if="!step.reverse"></div>
+<div class="w-4 h-4 bg-teal-700 rounded-full"></div>
+<div class="w-[4rem] md:w-[6rem] ml-[80px] md:ml-[110px] h-1 bg-teal-700" v-if="step.reverse"></div>
 </div>
 <!-- متن -->
-<div :class="step.reverse ? 'text-left ml-[250px]' : 'text-right mr-[250px]'" class="w-1/2 px-6">
-<h2 class="mb-4 text-[1.7rem] font-bold text-yellow-400 drop-shadow-[0_0_7px_#134e4a]">{{ step.title }}</h2>
-<p class="text-teal-900 text-md">{{ step.text }}</p>
+<div :class="step.reverse ? 'text-left ml-[220px] md:ml-[250px]' : 'text-right mr-[220px] md:mr-[250px]'" class="w-1/2 px-6">
+<h4 class="mb-4 text-[1.4rem] md:text-[1.7rem] font-bold text-yellow-400 drop-shadow-[0_0_7px_#134e4a]">{{ step.title }}</h4>
+<p class="text-gray-300 text-md">{{ step.text }}</p>
 </div>
 </div>
 </div>
@@ -44,9 +45,9 @@
 <div aria-hidden="true" class="meteor meteor-4"></div>
 <!-- heading -->
 <div class="relative z-10 max-w-5xl mx-auto text-center mb-12 sm:mb-16" style="margin-top: 130px !important;">
-<h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight opacity-1 translate-y-6 scale-95 transition-all duration-700 ease-out" ref="animated">
+<h2 class="text-3xl sm:text-4xl lg:text-5xl text-[#8cffdf] font-extrabold tracking-tight opacity-1 translate-y-6 scale-95 transition-all duration-700 ease-out" ref="animated">
           خدمات من
-        </h2>
+</h2>
 <p class="text-base md:text-lg mt-4 sm:mt-5 text-slate-300 opacity-1 translate-y-6 scale-95 transition-all duration-700 ease-out" ref="animated">
   از ایده تا اجرا، همراه شما در طراحی سایت‌های وردپرسی و فروشگاهی، کدنویسی اختصاصی و خلق تصاویر تبلیغاتی خلاقانه برای معرفی محصولات شما
         </p>
@@ -177,7 +178,7 @@ const animatedItems = ref([])
 const steps = [
   { title: 'ایده پردازی', text: 'جمع‌آوری ایده‌ها و نیازسنجی پروژه', icon: '/images/bulb.webp', reverse: false },
   { title: 'طراحی', text: 'طراحی رابط‌ کاربری و تجربه کاربری پروژه', icon: '/images/design.webp', reverse: true },
-  { title: 'توسعه', text: 'کدنویسی و پیاده‌سازی کامل پروژه', icon: '/images/coding.webp', reverse: false },
+  { title: 'توسعه', text: 'پیاده‌سازی کامل پروژه', icon: '/images/coding.webp', reverse: false },
   { title: 'تحویل', text: 'ارائه و تحویل نهایی پروژه', icon: '/images/delivery.webp', reverse: true }
 ]
 
